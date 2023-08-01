@@ -20,8 +20,8 @@ module.exports = {
             {
                 loader: 'image-webpack-loader',
                 options: {
-                    name: '[name].[ext]',
-                    outputPath: 'images',
+                    bypassOnDebug: true,
+                    disable: true,
                 },
             },
             ],
