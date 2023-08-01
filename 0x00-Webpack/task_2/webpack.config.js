@@ -11,12 +11,13 @@ module.exports = {
     module: {
         rules: [
         {
-            test: /\.css$/,
+            test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
         },
         {
-            test: /\.(png|jpe?g|ico|gif)$/i,
+            test: /\.(png|jp?g|ico|gif)$/i,
             use: [
+                'file-loader',
             {
                 loader: 'image-webpack-loader',
                 options: {
@@ -28,4 +29,9 @@ module.exports = {
         },
         ],
     },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
+      },
 };
