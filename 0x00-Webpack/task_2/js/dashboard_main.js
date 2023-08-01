@@ -1,6 +1,6 @@
 import $ from "jquery";
 import '../css/main.css';
-import debounce from "lodash/debounce";
+import _ from "lodash";
 
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
