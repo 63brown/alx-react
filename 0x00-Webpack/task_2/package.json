@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "jquery": "^3.7.0",
-    "lodash": "^4.17.21"
-  },
   "name": "task_2",
   "version": "1.0.0",
   "main": "webpack.config.js",
@@ -20,5 +16,9 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "lodash": "^4.17.21"
   }
 }

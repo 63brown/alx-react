@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
     mode: 'production',
@@ -8,6 +8,11 @@ module.exports = {
         path: path.resolve(__dirname, 'public' ),
         filename: 'bundle.js',
     },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
+    },
     module: {
         rules: [
         {
@@ -15,7 +20,7 @@ module.exports = {
             use: ['style-loader', 'css-loader'],
         },
         {
-            test: /\.(png|jp?g|ico|gif)$/i,
+            test: /\.(png|jp?g|ico|gif|svg)$/i,
             use: [
                 'file-loader',
             {
@@ -29,9 +34,4 @@ module.exports = {
         },
         ],
     },
-    performance: {
-        hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000,
-      },
 };
