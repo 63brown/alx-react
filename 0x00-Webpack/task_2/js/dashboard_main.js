@@ -1,4 +1,5 @@
 import $ from "jquery";
+import '../css/main.css';
 import debounce from "lodash/debounce";
 
 $('body').append('<p>Holberton Dashboard</p>');
